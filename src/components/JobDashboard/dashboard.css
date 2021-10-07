@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+/* Dashboard Header CSS Start */
+.dashboardHeader {
+  font-family: "Poppins";
+  background-color: white;
+  border-bottom: 2px solid #d5d6d6;
+
+  padding: 20px 20px 25px 20px;
+}
+.dashboardHeader ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.dashboardHeader ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.dashboardHeader ul li:nth-child(1) h1 {
+  font-family: Montserrat !important;
+  font-weight: 400 !important;
+}
+.dashboardHeader ul li:nth-child(2) {
+  margin-left: auto !important;
+}
+
+.dashboardHeader p {
+  font-size: 25px;
+}
+
+.navigation {
+  margin-right: 15px;
+}
+.navigation ul li {
+  margin-right: 20px;
+}
+.navigation ul li p {
+  margin-left: 10px;
+}
+
+.dashboardHeader ul .notification img {
+  margin: auto 10px;
+}
+
+.dashboardHeader ul .userProfile {
+  margin-left: 15px;
+}
+
+.dashboardHeader ul .userProfile p {
+  background-color: #7650e0;
+  color: white;
+  border-radius: 100%;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+}
