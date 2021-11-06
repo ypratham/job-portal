@@ -1,0 +1,259 @@
+.jobBoardLayout {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: max-content auto;
+  grid-template-rows: max-content 1fr;
+  grid-template-areas:
+    "filter jobs"
+    "footer jobs";
+}
+
+.jobsArea {
+  grid-area: jobs;
+  padding: 30px;
+  padding-top: 0px;
+}
+
+.filterCard {
+  background: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 10px;
+  width: max-content;
+  padding: 10px 30px 10px 10px;
+}
+.filterCard > h4 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.2 em;
+
+  color: #000000;
+}
+
+.filterCard ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+}
+
+.filterCard select {
+  outline: none;
+}
+
+/* Drop down Job Type */
+
+.filterCard ul .jobType p {
+  font-family: Poppins;
+  color: black;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+/* Drop down for location */
+.filterCard ul .location > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+
+  color: #000000;
+}
+
+/* Drop down location : state */
+.filterCard ul .location > div > p {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  color: #000000;
+}
+
+/* Drop down */
+
+.dropdown {
+  width: max-content;
+  margin: 5px auto 10px auto;
+  position: relative;
+  font-family: Poppins;
+  user-select: none;
+}
+
+.dropdown .dropdown-btn {
+  padding-left: 10px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cdcdcd;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown .dropdown-btn input {
+  border: none;
+  outline: none;
+  font-family: Poppins;
+  width: 100%;
+  font-size: 1rem;
+  width: 10vw;
+}
+.dropdown .dropdown-btn {
+  cursor: pointer;
+}
+.dropdown .dropdown-content {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #cdcdcd;
+  color: #333;
+  font-weight: 400;
+  width: max-content;
+  max-height: 300px;
+  overflow-y: scroll;
+  z-index: 10;
+}
+
+.dropdown .dropdown-content .dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: Poppins;
+}
+
+/* search Bar CSS */
+
+.jobsArea form {
+  display: flex;
+  align-items: center;
+}
+
+.jobsArea form img {
+  background-color: white;
+  padding: 10px 5px;
+}
+
+.jobsArea form input {
+  width: 100%;
+  outline: none;
+  border: none;
+
+  padding: 10px 20px;
+  font-family: Poppins;
+  font-size: 1rem;
+}
+
+/* Accordion CSS */
+.accordion {
+  font-family: Poppins;
+  display: grid;
+  grid-template-columns: 150px 1fr 200px;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "img title apply"
+    "img company apply"
+    "img address apply"
+    "img chips date";
+  background-color: #f9faff;
+  user-select: none;
+  cursor: pointer;
+  margin-top: 20px;
+  /* margin-bottom: 20px; */
+}
+
+.accordion > img {
+  grid-area: img;
+  align-self: center;
+  width: 120px;
+  align-self: center;
+  justify-self: center;
+}
+
+.accordion h2 {
+  grid-area: title;
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+.accordion h6 {
+  grid-area: company;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.accordion .address {
+  grid-area: address;
+}
+
+.accordion .button {
+  grid-area: apply;
+  align-self: center;
+  justify-self: center;
+}
+
+.accordion .button button {
+  font-family: Poppins;
+  font-weight: normal;
+  display: flex;
+  background-color: #0126a8;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.accordion .button button p {
+  margin-right: 10px;
+  font-size: 1rem;
+}
+.accordion .chips {
+  grid-area: chips;
+  display: flex;
+}
+
+.accordion .chips p {
+  border: 1px solid #5c6ac4;
+  border-radius: 200px;
+  padding: 5px 10px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+
+  margin: auto 5px;
+  color: #5c6ac4;
+  background-color: white;
+}
+
+.accordion .date {
+  grid-area: date;
+  align-self: center;
+  justify-self: center;
+  font-size: 1rem;
+}
+
+/* Accordion Content */
+.accordionContent {
+  background-color: #e8e8e8;
+  font-family: Poppins;
+  color: black;
+  transition: height ease 0.2s;
+  overflow: hidden;
+}
+
+.accordionContent .companyBackground > p:nth-child(1),
+.accordionContent .post > p:nth-child(1),
+.accordionContent .requirements > p:nth-child(1) {
+  color: #5e5e5e;
+  margin-bottom: 5px;
+}
+
+.accordionContent .companyBackground > p:nth-child(2),
+.accordionContent .post > p:nth-child(2) {
+  margin-bottom: 10px;
+}

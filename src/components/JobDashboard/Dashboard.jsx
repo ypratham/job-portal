@@ -19,7 +19,6 @@ function Dashboard() {
             <div className="main">
                 {HomeIsVisible ? <Home /> : <JobBoard />}
             </div>
-            <Footer />
         </div>
     )
 }

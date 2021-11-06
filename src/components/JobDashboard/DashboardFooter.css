@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+footer {
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  border-radius: 10px;
+  height: max-content;
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  color: #8a8a8a;
+}
+
+footer > ul > li > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer ul li ul .githubLink {
+  margin: auto 5px;
+}
+
+footer > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer ul .privacyLink {
+  margin: 5px auto;
+}
+
+footer ul .copyright {
+  margin-top: 5px;
+  color: black;
+}
